@@ -1,8 +1,11 @@
-import Category from "./components/Category";
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-
+import Category from "./components/Category";
 
 
 function App() {
@@ -10,7 +13,9 @@ function App() {
   <>
     <Header/>
     <Navbar/>
-    <Category/>
+      <Routes>
+        <Route path="/" element={<Category/>}/>
+      </Routes>
     <Footer/>
   </>
   );

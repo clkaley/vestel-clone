@@ -20,7 +20,10 @@ function Category() {
 
   return (
     <div >
-      
+
+      <div className="container">
+        <div className="row">
+          <div className="col">
     {categories.map((category)=>{
         return(
           <div key={category.ID} className="category-content" >
@@ -37,6 +40,9 @@ function Category() {
             
         )
     })}
+    </div>
+    </div>
+    </div>
     </div>
   )
 }
