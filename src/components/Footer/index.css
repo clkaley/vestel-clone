@@ -1,0 +1,105 @@
+.footer{
+    height: 100%;
+    background-color:#3b3b3b ;
+    color: #b4b3b4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+  }
+  
+  
+  .container p {
+    font-size: 15px;
+  }
+  
+   .about{
+    flex-grow: 1;
+    flex-basis: 100%;
+  
+  }
+  .about h2{
+
+  }
+  
+   .category{
+    flex-grow: 1;
+    flex-basis: 100%;
+
+  }
+  
+  .category h2{
+  
+  }
+  .category ul{
+    list-style-type: none;
+    color: white;
+    line-height:0.6cm;
+  }
+  
+  .category ul li a{
+    line-height: 3px;
+    font-size: 13px;
+    color: #b4b3b4;
+    text-decoration: none;
+  }
+  
+  .category ul li a:hover{
+    color: red;
+  }
+  
+   .contact{
+    font-size: 15px;
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+  
+  .contact ul{
+
+    list-style-type: none;
+  }
+  
+  .contact ul li a{
+    line-height:0.6cm;
+    font-size: 14px;
+    text-decoration: none;
+    color: #b4b3b4;
+
+  }
+  
+  
+  .contact ul li a:hover{
+    color: red;
+  }
+  
+  .copyright{
+    color: red;
+    padding: 15px;
+    font-size: 15px;
+  }
+
+
+  /* Meadia Queries */
+@media (max-width:768px){
+    .container{
+      flex-direction: column;
+    }
+    .about{
+        margin-bottom: 15px;
+    }
+
+
+  }
+@media (max-width:468px){
+    .about, .category{
+      padding-top: 15px;
+    }
+    
+}
