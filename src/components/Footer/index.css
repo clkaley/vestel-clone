@@ -45,11 +45,9 @@
   .category ul{
     list-style-type: none;
     color: white;
-    line-height:0.6cm;
   }
   
   .category ul li a{
-    line-height: 3px;
     font-size: 13px;
     color: #b4b3b4;
     text-decoration: none;

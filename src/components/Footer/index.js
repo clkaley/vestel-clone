@@ -8,7 +8,7 @@ function Footer() {
             <div className="container">
                     <div className="about">
                     <h2>Hakkımızda</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit itaque sed facere.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quam aperiam ad quia, mollitia molestiae odit dolore ullam voluptatem animi temporibus repudiandae officiis eaque sit!</p>
         </div>
         <div className="category">
           <h2>Kategoriler</h2>
