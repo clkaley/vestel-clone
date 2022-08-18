@@ -20,6 +20,8 @@ function Navbar() {
         <div className='right-content'>
             <Link className='link' to="/sepetim">Sepet</Link>
             <Link  className='link'  to="/login">Giriş Yap</Link>
+            <Link className='link' to="/products">Products</Link>
+            <Link  className='link'  to="/subcategory">SubCategory</Link>
         </div>
     <div className='container-nav'>
        
