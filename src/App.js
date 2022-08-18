@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Category from "./components/Category";
+import Product from "./components/Product";
+import SubCategory from "./components/SubCategory";
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Category/>}/>
+        <Route path="/subcategory" element={<SubCategory/>}/>
+        <Route path="/products" element={<Product/>}/>
       </Routes>
     <Footer/>
   </>

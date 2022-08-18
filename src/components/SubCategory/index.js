@@ -19,11 +19,7 @@ function SubCategory() {
 
   return (
    <>
-   <Header/>
-   <Navbar />
-      
-
-   <Footer/>
+   dfghbjnkmlöşkmjnhgftghbjnk
    </>
   )
 }
