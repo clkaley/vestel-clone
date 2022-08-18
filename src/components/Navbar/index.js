@@ -31,7 +31,7 @@ function Navbar() {
             return (
                 <ul className='category' key={category.ID}>
                   <li>
-                        <Link  to="/">{category.DisplayName}</Link>
+                        <Link  to={`/${category.ID}`}>{category.DisplayName}</Link>
                   </li>
                 </ul>
               )

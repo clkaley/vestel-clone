@@ -10,7 +10,7 @@ function SubCategory() {
   const fetchSubCategory = async () => {
       const res = await axios
       .get("https://store.vrunibex.com/mobile2/mbProduct/CategoryList");
-    return console.log(res.data.Result.TreeList[1].SubCategoryList.DisplayName);
+    return console.log(res.data.Result.TreeList[3].SubCategoryList);
   };
   
     useEffect(() => {
