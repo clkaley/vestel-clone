@@ -25,9 +25,7 @@
     flex-basis: 100%;
   
   }
-  .about h2{
 
-  }
   
    .category{
     flex-grow: 1;
@@ -35,9 +33,6 @@
 
   }
   
-  .category h2{
-  
-  }
   .category ul{
     list-style-type: none;
     color: white;
