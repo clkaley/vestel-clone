@@ -14,17 +14,8 @@ import SubCategory from './components/SubCategory';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-      
-      </Route>
-      
-      <Route path="/products" element={<SubCategory />}>
-
-      </Route>
-      
-    </Routes>
+  <BrowserRouter>
+    <App />
   </BrowserRouter>
   </>
 );

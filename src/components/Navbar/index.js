@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios"; 
 import { Link } from "react-router-dom";
 import './index.css'
-import Category from '../Category';
 function Navbar() {
   const[categories,setCategories]=useState([]);
 
