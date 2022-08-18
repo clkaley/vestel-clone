@@ -19,11 +19,11 @@ function Category() {
 
 
   return (
-    <div>
+    <div >
       
     {categories.map((category)=>{
         return(
-          <div key={category.ID} className="category" >
+          <div key={category.ID} className="category-content" >
             <Card  style={{ width: '15rem' }}>
               <a href="/">
             <Card.Img variant="top" src={category.ImageUri} />

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios"; 
 import { Link } from "react-router-dom";
 import './index.css'
+import Category from '../Category';
 function Navbar() {
   const[categories,setCategories]=useState([]);
 
@@ -19,7 +20,7 @@ function Navbar() {
     <>
         <div className='right-content'>
             <Link className='link' to="/sepetim">Sepet</Link>
-            <Link className='link' to="/login">Giriş Yap</Link>
+            <Link  className='link'  to="/login">Giriş Yap</Link>
         </div>
     <div className='container-nav'>
        
