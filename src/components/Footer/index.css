@@ -36,7 +36,10 @@
    .category{
     flex-grow: 1;
     flex-basis: 100%;
+  }
 
+  .category h2{
+    margin-left: 35px;
   }
   
   .category ul{
@@ -62,12 +65,15 @@
     flex-basis: 100%;
   }
   
-  .contact ul{
+.contact h2{
+  margin-left: 35px;
+}
 
+.contact ul{
     list-style-type: none;
   }
   
-  .contact ul li a{
+.contact ul li a{
     line-height:0.6cm;
     font-size: 14px;
     text-decoration: none;
