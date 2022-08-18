@@ -8,7 +8,7 @@
 
 .header-content .header .logo{
     font-size:1.5rem ;
-    color: red;
+    color: #df2027;
     text-decoration: none;
     cursor: pointer;
 }
@@ -28,7 +28,7 @@ display: flex;
 }
 
 .header-content .header .form-container form #search:focus{
-    color: red;
+    color: #df2027;
 }
 
 .header-content .header .form-container form label{

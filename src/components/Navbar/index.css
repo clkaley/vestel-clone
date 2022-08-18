@@ -1,3 +1,47 @@
-.nav{
-    background-color: red;
+
+.container-nav{
+    background-color: #df2027;
 }
+
+.right-content{
+    font-size: 15px;
+    display: flex;
+    justify-content:flex-end;
+}
+.link{
+    color: #df2027;
+    margin-left: 50px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: gainsboro;
+}
+
+.nav{
+    padding-top: 8px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .content{
+    display: flex;
+}
+
+.nav .content li{
+    list-style-type: none;
+}
+
+.nav .content li a{
+    color: gainsboro;
+    text-decoration: none;
+}
+
+.nav .content li a:hover{
+    color: white;
+    display: block;
+}
+
+

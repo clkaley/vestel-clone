@@ -6,7 +6,7 @@ function Header() {
     <>
     <div className='header-content'>
     <div className="header">
-        <a href="#" className="logo btn">
+        <a href="/" className="logo btn">
             Vestel
         </a>
         <div className="form-container">

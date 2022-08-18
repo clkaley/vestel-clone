@@ -33,28 +33,28 @@
   }
 
   
-   .category{
+ .container  .category{
     flex-grow: 1;
     flex-basis: 100%;
   }
 
-  .category h2{
+  .container .category h2{
     margin-left: 35px;
   }
   
-  .category ul{
+  .container .category ul{
     list-style-type: none;
     color: white;
   }
   
-  .category ul li a{
+  .container .category ul li a{
     font-size: 13px;
     color: #b4b3b4;
     text-decoration: none;
   }
   
-  .category ul li a:hover{
-    color: red;
+  .container .category ul li a:hover{
+    color: #df2027;
   }
   
    .contact{
@@ -81,11 +81,11 @@
   
   
   .contact ul li a:hover{
-    color: red;
+    color: #df2027;
   }
   
   .copyright{
-    color: red;
+    color: #df2027;
     padding: 15px;
     font-size: 15px;
   }

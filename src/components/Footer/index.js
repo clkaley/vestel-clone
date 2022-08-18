@@ -12,35 +12,34 @@ function Footer() {
         </div>
         <div className="category">
           <h2>Kategoriler</h2>
-          
           <ul>
             <li>
-              <a href="https://www.ciceksepeti.com/cicek-bakimi" className="nav-link">
+              <a href="" className="nav-link">
                  Beyaz Eşya
               </a>
             </li>
             <li>
-              <a href="https://www.ciceksepeti.com/cicek-anlamlari" className="nav-link">
+              <a href="" className="nav-link">
                   Ankastre
               </a>
             </li>
             <li>
-              <a href="https://www.ciceksepeti.com/mevsimlere-gore-cicekler" className="nav-link">
+              <a href="" className="nav-link">
                 Klima ve Isıtıcılar
               </a>
             </li>
             <li>
-              <a href="https://www.ciceksepeti.com/mevsimlere-gore-cicekler" className="nav-link">
+              <a href="" className="nav-link">
                 Küçük Ev Aletleri
               </a>
             </li>
             <li>
-              <a href="https://www.ciceksepeti.com/mevsimlere-gore-cicekler" className="nav-link">
+              <a href="" className="nav-link">
                Mobil Cihazlar
               </a>
             </li>
             <li>
-              <a href="https://www.ciceksepeti.com/mevsimlere-gore-cicekler" className="nav-link">
+              <a href="" className="nav-link">
                 Hediye Fikirleri
               </a>
             </li>
