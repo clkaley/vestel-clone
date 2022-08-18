@@ -3,7 +3,7 @@ import React from 'react'
 import './index.css'
 function Footer() {
   return (
-    <div>
+    <div className='footer-content'>
          <div className='footer' >
             <div className="container">
                     <div className="about">

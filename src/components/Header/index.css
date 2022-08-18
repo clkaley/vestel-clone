@@ -1,0 +1,66 @@
+.header-content .header,header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.header-content .header .logo{
+    font-size:1.5rem ;
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.header-content .header .form-container form{
+display: flex;
+}
+
+.header-content .header .form-container form #search{
+    height: 3rem;
+    width: 25rem;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 1rem;  
+}
+
+.header-content .header .form-container form #search:focus{
+    color: red;
+}
+
+.header-content .header .form-container form label{
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.header-content .header .form-container form label:hover{
+    background:white ;  
+}
+
+
+@media (max-width:768px){
+
+    .header-content .header .form-container form #search{
+        width: 100%;
+    }
+  }
+
+  @media (max-width:468px){
+    .header-content .header{
+        flex-flow: column;
+        padding: 2rem;
+    }
+
+    .header-content .header .logo{
+        padding: 1rem;
+    }
+    
+}

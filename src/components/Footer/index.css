@@ -1,6 +1,12 @@
+.footer-content{
+  padding: 1rem;
+
+  background-color:#3b3b3b ;
+}
+
+
 .footer{
-    height: 100%;
-    background-color:#3b3b3b ;
+   
     color: #b4b3b4;
     display: flex;
     flex-direction: column;
@@ -93,6 +99,7 @@
 
   }
 @media (max-width:468px){
+
     .about, .category{
       padding-top: 15px;
     }
