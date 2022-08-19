@@ -5,8 +5,8 @@ function Product() {
 
     const fetchProduct = async () => {
       const res = await axios
-      .get("https://store.vrunibex.com/mobile2/mbProduct/ProductList?");
-    return console.log(res.data.Result.ProductList);
+        .get("https://store.vrunibex.com/mobile2/mbProduct/ProductList?");
+        return console.log(res.data.Result);
   };
   
     useEffect(() => {

@@ -3,6 +3,8 @@ import axios from "axios";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './index.css'
+import tv from "../../img/tv.jpg"
+import { Link, useParams } from "react-router-dom"
 function Category() {
 
     const[categories,setCategories]=useState([]);
@@ -23,17 +25,21 @@ function Category() {
 
       <div className="container">
         <div className="row">
-          <div className="col">
+     
     {categories.map((category)=>{
         return(
-          <div key={category.ID} className="category-content" >
+          <div key={category.ID} className="col-lg-4 col-md-6 col-xxl-3 col-sm-12   category-content" style={{margin:"20px auto"}} >
             <Card  style={{ width: '15rem' }}>
-              <a href="/">
+              <a>
             <Card.Img variant="top" src={category.ImageUri} />
               </a>
             <Card.Body>
             <Card.Title>{category.DisplayName}</Card.Title>
-            <Button variant="danger">DETAY</Button>
+            <Link to={`/category/${category.ID}`}>
+            <Button variant="danger">
+              Detay
+            </Button>
+            </Link>
             </Card.Body>
             </Card>
           </div>
@@ -42,7 +48,7 @@ function Category() {
     })}
     </div>
     </div>
-    </div>
+    
     </div>
   )
 }

@@ -17,8 +17,9 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Category/>}/>
-        <Route path="/subcategory" element={<SubCategory/>}/>
+        <Route path="/category/:categoryID" element={<SubCategory/>}/>
         <Route path="/products" element={<Product/>}/>
+        
       </Routes>
     <Footer/>
   </>

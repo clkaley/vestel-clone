@@ -1,14 +1,17 @@
+/* eslint-disable no-undef */
 import React, { useEffect, useState } from 'react'
 import axios from "axios"; 
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FaShoppingBasket } from "react-icons/fa";
 import { FaHouseUser } from "react-icons/fa";
 import { FaBookReader } from "react-icons/fa";
 import { FaPushed } from "react-icons/fa";
-import './index.css'
+import './index.css';
+
+
 function Navbar() {
   const[categories,setCategories]=useState([]);
-
+  const {categoryID}=useParams();
   const fetchCategory = async () => {
       const res = await axios
       .get("https://store.vrunibex.com/mobile2/mbProduct/CategoryList");
@@ -25,7 +28,6 @@ function Navbar() {
             <Link className='link' to="/sepetim"><FaShoppingBasket style={{fontSize:"30px"}} /></Link>
             <Link  className='link'  to="/login"><FaHouseUser style={{fontSize:"30px"}}/></Link>
             <Link className='link' to="/products"><FaPushed style={{fontSize:"30px"}}/></Link>
-            <Link  className='link'  to="/subcategory"><FaBookReader style={{fontSize:"30px"}}/></Link>
         </div>
     <div className='container-nav'>
        
@@ -36,7 +38,7 @@ function Navbar() {
             return (
                 <ul className='category' key={category.ID}>
                   <li>
-                        <Link  to={`/${category.ID}`}>{category.DisplayName}</Link>
+                        <Link  to={`/category/${category.ID}`}>{category.DisplayName}</Link>
                   </li>
                 </ul>
               )
