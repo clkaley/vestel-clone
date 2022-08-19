@@ -21,9 +21,10 @@
 
 .nav{
     padding-top: 8px;
-    font-size: 12px;
+    font-size: 13px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav .content{
@@ -44,4 +45,13 @@
     display: block;
 }
 
+
+@media (max-width:1024px){
+    .content{
+      flex-direction: column;
+    }
+   
+
+
+  }
 
