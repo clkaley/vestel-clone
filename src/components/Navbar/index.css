@@ -6,7 +6,8 @@
 .right-content{
     font-size: 15px;
     display: flex;
-    justify-content:flex-end;
+    justify-content:center;
+    align-items: center;
 }
 .link{
     color: #df2027;

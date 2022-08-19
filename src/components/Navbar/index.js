@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"; 
 import { Link } from "react-router-dom";
+import { FaShoppingBasket } from "react-icons/fa";
+import { FaHouseUser } from "react-icons/fa";
+import { FaBookReader } from "react-icons/fa";
+import { FaPushed } from "react-icons/fa";
 import './index.css'
 function Navbar() {
   const[categories,setCategories]=useState([]);
@@ -18,10 +22,10 @@ function Navbar() {
   return (
     <>
         <div className='right-content'>
-            <Link className='link' to="/sepetim">Sepet</Link>
-            <Link  className='link'  to="/login">Giriş Yap</Link>
-            <Link className='link' to="/products">Products</Link>
-            <Link  className='link'  to="/subcategory">SubCategory</Link>
+            <Link className='link' to="/sepetim"><FaShoppingBasket/></Link>
+            <Link  className='link'  to="/login"><FaHouseUser/></Link>
+            <Link className='link' to="/products"><FaPushed/></Link>
+            <Link  className='link'  to="/subcategory"><FaBookReader/></Link>
         </div>
     <div className='container-nav'>
        
