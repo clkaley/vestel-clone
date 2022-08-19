@@ -22,7 +22,7 @@ display: flex;
 .header-content .header .form-container form #search{
     height: 3rem;
     width: 25rem;
-    outline: none;
+    border-color: #df2027;
     font-size: 1rem;
     padding: 0 1rem;  
 }
