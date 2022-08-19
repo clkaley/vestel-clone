@@ -11,7 +11,8 @@ import './index.css';
 
 function Navbar() {
   const[categories,setCategories]=useState([]);
-  const {categoryID}=useParams();
+ // const {categoryID}=useParams();
+  
   const fetchCategory = async () => {
       const res = await axios
       .get("https://store.vrunibex.com/mobile2/mbProduct/CategoryList");

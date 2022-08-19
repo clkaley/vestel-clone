@@ -19,19 +19,18 @@ function Category() {
         fetchCategory();
       },);
 
-
+      // {`${category.DisplayName==="BEYAZ EŞYA" ? 'BEYAZ EŞYA' : 'hello' }`}
+      // {category.ImageUri}
   return (
     <div >
-
       <div className="container">
         <div className="row">
-     
     {categories.map((category)=>{
         return(
           <div key={category.ID} className="col-lg-4 col-md-6 col-xxl-3 col-sm-12   category-content" style={{margin:"20px auto"}} >
             <Card  style={{ width: '15rem' }}>
               <a>
-            <Card.Img variant="top" src={category.ImageUri} />
+            <Card.Img variant="top" src={`${category.ImageUri==="" ? tv : category.ImageUri}`} />
               </a>
             <Card.Body>
             <Card.Title>{category.DisplayName}</Card.Title>
