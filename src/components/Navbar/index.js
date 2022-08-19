@@ -22,10 +22,10 @@ function Navbar() {
   return (
     <>
         <div className='right-content'>
-            <Link className='link' to="/sepetim"><FaShoppingBasket/></Link>
-            <Link  className='link'  to="/login"><FaHouseUser/></Link>
-            <Link className='link' to="/products"><FaPushed/></Link>
-            <Link  className='link'  to="/subcategory"><FaBookReader/></Link>
+            <Link className='link' to="/sepetim"><FaShoppingBasket style={{fontSize:"30px"}} /></Link>
+            <Link  className='link'  to="/login"><FaHouseUser style={{fontSize:"30px"}}/></Link>
+            <Link className='link' to="/products"><FaPushed style={{fontSize:"30px"}}/></Link>
+            <Link  className='link'  to="/subcategory"><FaBookReader style={{fontSize:"30px"}}/></Link>
         </div>
     <div className='container-nav'>
        
