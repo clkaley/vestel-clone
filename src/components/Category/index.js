@@ -24,11 +24,11 @@ function Category() {
   return (
     <div >
       <div className="container">
-        <div className="row">
+        <div className="row g-4">
     {categories.map((category)=>{
         return(
           <div key={category.ID} className="col-lg-4 col-md-6 col-xxl-3 col-sm-12   category-content" style={{margin:"20px auto"}} >
-            <Card  style={{ width: '15rem' }}>
+            <Card className='card h-100'  style={{ width: '15rem' }}>
               <a>
             <Card.Img variant="top" src={`${category.ImageUri==="" ? tv : category.ImageUri}`} />
               </a>

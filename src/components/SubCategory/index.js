@@ -10,18 +10,20 @@ import { Link } from "react-router-dom"
 function SubCategory() {
     const[subcategories,setSubCategories]=useState([]);
     const {categoryID}=useParams();
+    const {productID}=useParams();
    // console.log("categoryId",categoryID);
 
   const fetchSubCategory = async () => {
       const res = await axios
       .get(`https://store.vrunibex.com/mobile2/mbProduct/ProductList?CategoryID=${categoryID}`);
-     
-    return  setSubCategories(res.data.Result.TopCategory.SubCategoryList);
+      return  setSubCategories(res.data.Result.TopCategory.SubCategoryList);
+   
   };
       useEffect(() => {
         fetchSubCategory();
-      
     });
+
+
 
   return (
    <>
@@ -37,7 +39,7 @@ function SubCategory() {
                     </a>
                   <Card.Body>
                   <Card.Title>{subpro.DisplayName}</Card.Title>
-                  <Link to={`/category/${subpro.ID}`}>
+                  <Link to={`/products/${subpro.ID}`}>
                   <Button variant="danger">
                     Detay
                   </Button>
