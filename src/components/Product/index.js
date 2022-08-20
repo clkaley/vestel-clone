@@ -30,7 +30,7 @@ function Product() {
               </a>
             <Card.Body>
             <Card.Title>{products.DisplayName}</Card.Title>
-            <Link to={`/product-detail/${products.ID}`}>
+            <Link to={`product-detail/${products.ID}`}>
             <Button variant="danger">
               Ürün Detay
             </Button>
