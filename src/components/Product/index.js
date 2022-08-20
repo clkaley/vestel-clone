@@ -7,12 +7,13 @@ import Button from 'react-bootstrap/Button';
 function Product() {
     const[product,setProduct]=useState([]);
     const {productID}=useParams();
+
     const fetchProduct = async () => {
       const res = await axios
       .get(`https://store.vrunibex.com/mobile2/mbProduct/ProductList?CategoryID=${productID}`);
       return  setProduct(res.data.Result.ProductList);
   };
-  
+
     useEffect(() => {
       fetchProduct();
     });
@@ -29,7 +30,7 @@ function Product() {
               </a>
             <Card.Body>
             <Card.Title>{products.DisplayName}</Card.Title>
-            <Link to={`/product/${products.ID}`}>
+            <Link to={`/product-detail/${products.ID}`}>
             <Button variant="danger">
               Ürün Detay
             </Button>
