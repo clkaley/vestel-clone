@@ -31,7 +31,12 @@ function ProductDetail() {
             <Card.Body>
             <Card.Title>{productDetail.PageTitle}</Card.Title>
             <p>{productDetail.DisplayName}</p>
+            <h2 className="text-danger my-5">{productDetail.ActualPriceToShowOnScreen} TL</h2>
+            <Button variant="danger">
+                  Sepete Ekle
+                  </Button>
             </Card.Body>
+         
             </Card>
  </div>
             </div>
