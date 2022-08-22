@@ -1,7 +1,8 @@
-# Vestel Clone
+# Vestel Clone Project
 
 Verilen Api ile Vestel Clone u amaçlanmıştır. 
-useEffect, useState Hooks'ları ile React Router v6 kullanılarak geliştirilmiştir. Responsive Tasarıma uygun olması amaçlanmıştır :) 
+
+useEffect, useState Hooks'ları ile React Router v6 kullanılarak geliştirilmiştir. Responsive Tasarıma uygun olması amaçlanmıştır :) Eksik img lar için default bir img eklenip shorthand if else ile img çekilmediği yerde default ile eklenen img gösterildi.
 
 
 ![Ekran Görüntüsü (483)](https://user-images.githubusercontent.com/74673470/185892999-7aa02bd2-21c2-447c-a2f4-e73361a293aa.png)
